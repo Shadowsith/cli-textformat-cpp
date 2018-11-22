@@ -6,3 +6,4 @@ It has no class overhead and is only capsuled into the text namespace.
 ## TODO
 * implementing all formatting options
 * some examples
+* port to other languages when finished

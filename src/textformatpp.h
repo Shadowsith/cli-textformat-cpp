@@ -5,41 +5,44 @@
 
 namespace text {
 
-    const std::string FORM_BEGIN = "\033[";
-    const std::string FORM_END = "\033[0m";
-    const std::string FORM_END_MULTILINE = "\033[";
+    namespace Format {
+        const std::string BEGIN = "\033[";
+        const std::string END = "\033[0m";
+        const std::string MULTILINE_END = "\033[0a";
 
-    enum FG_COLOR {  
-        BLACK = 30,
-        RED,
-        GREEN,
-        YELLOW,
-        BLUE,
-        MAGENTA,
-        CYAN,
-        WHITE,
+        namespace Text {
+            const std::string RESET = "0m";
+            const std::string BOLD = "1m";
+            const std::string UNDERLINE = "4m";
+            const std::string INVERSE = "7m";
+            const std::string BOLD_OFF = "21m";
+            const std::string UNDERLINE_OFF = "24m";
+            const std::string INVERSE_OFF = "27m";
+        }
     };
 
-    enum BG_COLOR { 
-        BG_BLACK = 40,
-        BG_RED,
-        BG_GREEN,
-        BG_YELLOW,
-        BG_BLUE,
-        BG_MAGENTA,
-        BG_CYAN,
-        BG_WHITE,
+    namespace Color {
+        namespace Fg {
+            const std::string BLACK = "30m";
+            const std::string RED = "31m";
+            const std::string GREEN = "32m";
+            const std::string YELLOW = "33m";
+            const std::string BLUE = "34m";
+            const std::string MAGENTA = "35m";
+            const std::string CYAN = "36m";
+            const std::string WHITE = "37m";
+        };
 
-    };
-
-    enum FORMAT {
-        RESET = 0,
-        BOLD,
-        UNDERLINE = 4,
-        INVERSE = 7,
-        BOLD_OFF = 21,
-        UNDERLINE_OFF = 24,
-        INVERSE_OFF = 27,
+        namespace Bg { 
+            const std::string BLACK = "40m";
+            const std::string RED = "41m";
+            const std::string GREEN = "42m";
+            const std::string YELLOW = "43m";
+            const std::string BLUE = "44m";
+            const std::string MAGENTA = "45m";
+            const std::string CYAN = "46m";
+            const std::string WHITE = "47m";
+        };
     };
 
     //fg colors
@@ -77,6 +80,8 @@ namespace text {
     std::string cyan_bg(std::string str, bool multiline);
     std::string white_bg(std::string str);
     std::string white_bg(std::string str, bool multiline);
+
+    std::string disable_multiline();
 
     std::string underline(std::string str);
 }

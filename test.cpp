@@ -5,7 +5,7 @@ int main(void)
 {
     // output some magenta text to the terminal
     std::cout << "Foreground color test:" << std::endl;
-    std::cout << text::magenta("magenta message") << std::endl;
+    std::cout << text::magenta("magenta message", false) << std::endl;
     std::cout << text::green("green message") << std::endl;
     std::cout << text::yellow("yellow message") << std::endl;
     std::cout << text::blue("blue message") << std::endl;
@@ -25,8 +25,6 @@ int main(void)
     std::cout << text::red("Error Message:", true) << std::endl;
     std::cout << "Error 1 at line 2" << std::endl;
     std::cout << "Error 2 at line 40" << std::endl;
-
-    text::disable_multiline();
 
     std::cout << "normal" << std::endl;
 

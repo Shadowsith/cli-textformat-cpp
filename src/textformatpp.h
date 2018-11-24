@@ -1,3 +1,4 @@
+// MIT License, Copyright (c) 2018 Philip Mayer <philip.mayer@shadowsith.de>
 #ifndef TEXTFOMATPP_H
 #define TEXTFOMATPP_H
 

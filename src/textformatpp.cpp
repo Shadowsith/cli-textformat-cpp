@@ -1,3 +1,4 @@
+// MIT License, Copyright (c) 2018 Philip Mayer <philip.mayer@shadowsith.de>
 #include "textformatpp.h"
 #include <string>
 

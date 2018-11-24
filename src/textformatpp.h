@@ -46,44 +46,48 @@ namespace text {
     };
 
     //fg colors
-    std::string black(std::string str);
-    std::string black(std::string str, bool multiline);
-    std::string red(std::string str);
-    std::string red(std::string str, bool multiline);
-    std::string green(std::string str);
-    std::string green(std::string str, bool multiline);
-    std::string yellow(std::string str);
-    std::string yellow(std::string str, bool multiline);
-    std::string blue(std::string str);
-    std::string blue(std::string str, bool multiline);
-    std::string magenta(std::string str);
-    std::string magenta(std::string str, bool multiline);
-    std::string cyan(std::string str);
-    std::string cyan(std::string str, bool multiline);
-    std::string white(std::string str);
-    std::string white(std::string str, bool multiline);
+    std::string black(std::string text);
+    std::string black(std::string text, bool multiline);
+    std::string red(std::string text);
+    std::string red(std::string text, bool multiline);
+    std::string green(std::string text);
+    std::string green(std::string text, bool multiline);
+    std::string yellow(std::string text);
+    std::string yellow(std::string text, bool multiline);
+    std::string blue(std::string text);
+    std::string blue(std::string text, bool multiline);
+    std::string magenta(std::string text);
+    std::string magenta(std::string text, bool multiline);
+    std::string cyan(std::string text);
+    std::string cyan(std::string text, bool multiline);
+    std::string white(std::string text);
+    std::string white(std::string text, bool multiline);
 
     //bg colors
-    std::string black_bg(std::string str);
-    std::string black_bg(std::string str, bool multiline);
-    std::string red_bg(std::string str);
-    std::string red_bg(std::string str, bool multiline);
-    std::string green_bg(std::string str);
-    std::string green_bg(std::string str, bool multiline);
-    std::string yellow_bg(std::string str);
-    std::string yellow_bg(std::string str, bool multiline);
-    std::string blue_bg(std::string str);
-    std::string blue_bg(std::string str, bool multiline);
-    std::string magenta_bg(std::string str);
-    std::string magenta_bg(std::string str, bool multiline);
-    std::string cyan_bg(std::string str);
-    std::string cyan_bg(std::string str, bool multiline);
-    std::string white_bg(std::string str);
-    std::string white_bg(std::string str, bool multiline);
+    std::string black_bg(std::string text);
+    std::string black_bg(std::string text, bool multiline);
+    std::string red_bg(std::string text);
+    std::string red_bg(std::string text, bool multiline);
+    std::string green_bg(std::string text);
+    std::string green_bg(std::string text, bool multiline);
+    std::string yellow_bg(std::string text);
+    std::string yellow_bg(std::string text, bool multiline);
+    std::string blue_bg(std::string text);
+    std::string blue_bg(std::string text, bool multiline);
+    std::string magenta_bg(std::string text);
+    std::string magenta_bg(std::string text, bool multiline);
+    std::string cyan_bg(std::string text);
+    std::string cyan_bg(std::string text, bool multiline);
+    std::string white_bg(std::string text);
+    std::string white_bg(std::string text, bool multiline);
 
+    std::string bold(std::string text); 
+    std::string bold(std::string text, bool multiline);
     std::string disable_multiline();
-
-    std::string underline(std::string str);
+    std::string inverse(std::string text); 
+    std::string inverse(std::string text, bool multiline); 
+    std::string underline(std::string text);
+    std::string underline(std::string, bool multiline);
 }
 
 #endif

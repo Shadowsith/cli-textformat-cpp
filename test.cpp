@@ -26,13 +26,13 @@ int main(void)
     std::cout << text::black_bg("black message") << std::endl;
     std::cout << std::endl;
 
-    std::cout << text::red("Error Message:", true) << std::endl;
+    std::cout << text::red("Error message:", true) << std::endl;
     std::cout << "Error 1 at line 2" << std::endl;
     std::cout << "Error 2 at line 40" << std::endl;
 
     std::cout << "normal" << std::endl;
 
-    std::cout << text::green(text::bold(text::underline("Sucess message:", true), true), true) << std::endl;
+    std::cout << text::green(text::bold(text::underline("Success message:", true), true), true) << std::endl;
     std::cout << "All tests succeed:" << std::endl;
     std::cout << "program runs as expected" << text::disable_multiline() << std::endl;
 

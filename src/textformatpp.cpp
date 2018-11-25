@@ -74,9 +74,9 @@ namespace text {
 
     std::string black_bg(std::string text, bool multiline) {
         if(multiline == true)
-            text = Format::BEGIN + Color::Bg::RED + text + Format::MULTILINE_END;
+            text = Format::BEGIN + Color::Bg::BLACK + text + Format::MULTILINE_END;
         else
-            text = Format::BEGIN + Color::Bg::RED + text + Format::END;
+            text = Format::BEGIN + Color::Bg::BLACK + text + Format::END;
         return text;
     }
 

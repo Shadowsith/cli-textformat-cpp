@@ -1,6 +1,6 @@
 # cli-textformat-cpp
 
-Textformatpp is a lightweight C++ library to write colored and formated code into your linux terminal cli.<br>
+Textformatpp is a lightweight C++ library to write colored and formated code onto the linux terminal/cli.<br>
 It has intentionally no class overhead to keep it as lightweight as possible and it is only capsuled into the 'text' namespaces. 
 
 ## Motivation
@@ -39,7 +39,7 @@ std::cout << text::bold(text::underline(text::red)) << std::endl; // bold and gr
 * port to other languages when finished
 
 ## Support
-If some errors appears please write a issue that I can fix it
+If some errors appears please write a issue that I can fix it.
 
 ## License
 MIT
